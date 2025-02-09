@@ -1,21 +1,28 @@
 import os
+import urllib
+import urllib.request
+
 from dotenv import load_dotenv
+from random import randrange
 
 load_dotenv()
 
-ADDRESS = int(os.getenv('ADDRESS'))
-DEBUG = os.getenv('DEBUG')
+ADDRESS = os.getenv('ADDRESS')
 MYNAME = os.getenv('MYNAME')
 
 def measure():
     # Here we would implement some measuring system
-    return 1
+    print("measuring\n")
+    measure = randrange(10)
+    return measure
 
-def send()
-    url = ADDRESS + '/' '
+def send():
 
-schedule.every(1).minutes.do(send)
+    url = ADDRESS + '/' + MYNAME + '/' + str(measure())
+    print("sending: " + url + "\n")
+    with urllib.request.urlopen(url) as response:
+        pass
+    print(response.status)
 
-while true:
-    schedule.run_pending()
-    time.sleep(1)
+if __name__ == '__main__':
+    send()
