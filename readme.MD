@@ -32,3 +32,4 @@ DEBUG=False
 ```
 
 Directory of db is 2 things. It's the location where MSEServer is running. As db.txt created there is pretending to be a data storage solution. It's also a stark reminder to not to use too generic variable names like PATH or one will get embarrassed.
+Again - I don't remember if Debug was in use and I'm too tired to check. Put it in, or find out.
