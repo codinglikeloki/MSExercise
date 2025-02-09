@@ -12,7 +12,7 @@ DEBUG=False
 Port is port you want to run the service. Debug turns on and off debuging.
 
 2. MSEEmitter.py
-that will send measures for service above.
+that will send measures for service above. Emitter should be run with cron or some other scheduling tool.
 Create .env file with content:
 ```
 ADDRESS=http://127.0.0.1:8616
